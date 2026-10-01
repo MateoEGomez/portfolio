@@ -17,20 +17,20 @@ const temaBtn = document.getElementById("temaBtn");
 
 const temaIcono = temaBtn.querySelector("i");
 
-if (localStorage.getItem("tema") === "claro") {
-    document.body.classList.add("claro");
-    temaIcono.className = "fa-solid fa-moon";
+if (localStorage.getItem("tema") === "oscuro") {
+    document.body.classList.add("oscuro");
+    temaIcono.className = "fa-solid fa-sun";
 }
 
 temaBtn.addEventListener("click", function () {
-    document.body.classList.toggle("claro");
+    document.body.classList.toggle("oscuro");
 
-    if (document.body.classList.contains("claro")) {
-        temaIcono.className = "fa-solid fa-moon";
-        localStorage.setItem("tema", "claro");
-    } else {
+    if (document.body.classList.contains("oscuro")) {
         temaIcono.className = "fa-solid fa-sun";
         localStorage.setItem("tema", "oscuro");
+    } else {
+        temaIcono.className = "fa-solid fa-moon";
+        localStorage.setItem("tema", "claro");
     }
 });
 
@@ -84,7 +84,12 @@ form.addEventListener("submit", function (evento) {
     }
 
     if (valido) {
-        formMensaje.textContent = "¡Gracias " + nombre.value.trim() + "! Tu mensaje fue enviado.";
+        const cuerpo = mensaje.value.trim() + "\n\n" + nombre.value.trim() + " (" + email.value.trim() + ")";
+        window.location.href = "mailto:gomezmateoezequiel@gmail.com"
+            + "?subject=" + encodeURIComponent(asunto.value.trim())
+            + "&body=" + encodeURIComponent(cuerpo);
+
+        formMensaje.textContent = "¡Gracias " + nombre.value.trim() + "! Se abrió tu correo para enviar el mensaje.";
         formMensaje.className = "form-mensaje exito";
         form.reset();
     } else {

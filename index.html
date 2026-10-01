@@ -4,162 +4,331 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mateo Gómez | Portfolio</title>
+    <meta name="description" content="Portfolio de Mateo Ezequiel Gómez, estudiante de Técnico Superior en Programación en la UTN.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
-            <a href="#inicio" class="logo">Portfolio WEB</a>
+        <nav class="nav contenedor">
+            <a href="#inicio" class="logo">mateo<span>.</span>dev</a>
             <button class="menu-btn" id="menuBtn" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#conocimientos">Conocimientos</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#redes">Redes</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><button class="tema-btn" id="temaBtn" aria-label="Cambiar tema"><i class="fa-solid fa-sun"></i></button></li>
+                <li><a href="#sobre-mi"><span>01.</span> Sobre mí</a></li>
+                <li><a href="#conocimientos"><span>02.</span> Conocimientos</a></li>
+                <li><a href="#proyectos"><span>03.</span> Proyectos</a></li>
+                <li><a href="#contacto"><span>04.</span> Contacto</a></li>
+                <li><button class="tema-btn" id="temaBtn" aria-label="Cambiar tema"><i class="fa-solid fa-moon"></i></button></li>
             </ul>
         </nav>
     </header>
 
-    <main class="contenedor">
-        <section class="bloque hero" id="inicio">
+    <main>
+        <section class="hero contenedor" id="inicio">
             <div class="hero-texto">
-                <h1>Mateo Gómez</h1>
-                <h2 class="subtitulo">Desarrollador / Estudiante de Programación</h2>
-                <p>Me gusta construir aplicaciones que resuelvan problemas reales. Actualmente aprendiendo C#, bases de datos y desarrollo web.</p>
+                <p class="hero-saludo">Hola, mi nombre es</p>
+                <h1>Mateo Gómez<span>.</span></h1>
+                <h2>Construyo software que resuelve problemas reales.</h2>
+                <p>Estudiante de Técnico Superior en Programación en la UTN. Desarrollo aplicaciones de escritorio en C# y sitios web con JavaScript, Vue y React.</p>
                 <div class="hero-botones">
                     <a href="#proyectos" class="btn">Ver proyectos</a>
-                    <a href="#" class="btn btn-borde">Descargar CV</a>
+                    <a href="https://github.com/MateoEGomez" target="_blank" class="btn btn-borde"><i class="fa-brands fa-github"></i> GitHub</a>
                 </div>
             </div>
-            <div class="foto">MG</div>
-        </section>
-
-        <section class="bloque" id="sobre-mi">
-            <h2 class="titulo-seccion">Sobre mí</h2>
-            <p>Soy estudiante de la Tecnicatura Universitaria en Programación en la UTN FRGP. Disfruto aprender tecnologías nuevas y trabajar en equipo en proyectos prácticos.</p>
-            <div class="grilla-2">
-                <div class="tarjeta">
-                    <h3>Datos rápidos</h3>
-                    <ul class="lista-datos">
-                        <li><strong>Ubicación:</strong> Buenos Aires</li>
-                        <li><strong>Idiomas:</strong> Español (Nativo), Inglés</li>
-                        <li><strong>Educación:</strong> UTN FRGP</li>
-                    </ul>
-                </div>
-                <div class="tarjeta">
-                    <h3>Experiencia</h3>
-                    <ul class="lista-datos">
-                        <li><strong>Año - hoy:</strong> Completá con tu experiencia</li>
-                    </ul>
-                </div>
+            <div class="foto-marco">
+                <div class="foto">MG</div>
             </div>
         </section>
 
-        <section class="bloque" id="conocimientos">
-            <h2 class="titulo-seccion">Conocimientos</h2>
-            <div class="grilla-4">
-                <div class="tarjeta">
-                    <h3>Backend & Lógica</h3>
-                    <div class="pastillas">
-                        <span class="pastilla">C#</span>
-                        <span class="pastilla">.NET</span>
-                    </div>
+        <section class="seccion contenedor" id="sobre-mi">
+            <h2 class="titulo-seccion"><span>01.</span> Sobre mí</h2>
+            <div class="sobre-mi">
+                <div>
+                    <p>Aspiro a ser programador y actualmente estoy cursando el segundo año de la Tecnicatura Superior en Programación en la UTN. Soy una persona responsable y motivada, con muchas ganas de aprender, crecer profesionalmente y aplicar lo que sé en proyectos reales.</p>
+                    <p>Trabajo en atención al cliente y gestión de equipos, lo que me dio experiencia resolviendo problemas bajo presión y comunicándome con distintas personas. Fuera del código entreno regularmente, algo que me ayuda a mantener el enfoque, la disciplina y la constancia.</p>
                 </div>
-                <div class="tarjeta">
-                    <h3>Bases de Datos</h3>
-                    <div class="pastillas">
-                        <span class="pastilla">SQL</span>
-                        <span class="pastilla">SQL Server</span>
-                    </div>
-                </div>
-                <div class="tarjeta">
-                    <h3>Frontend</h3>
-                    <div class="pastillas">
-                        <span class="pastilla">HTML5</span>
-                        <span class="pastilla">CSS3</span>
-                        <span class="pastilla">JavaScript</span>
-                    </div>
-                </div>
-                <div class="tarjeta">
-                    <h3>Herramientas</h3>
-                    <div class="pastillas">
-                        <span class="pastilla">Visual Studio</span>
-                        <span class="pastilla">Git</span>
-                    </div>
-                </div>
+                <ul class="datos">
+                    <li><i class="fa-solid fa-location-dot"></i> San Fernando, Buenos Aires</li>
+                    <li><i class="fa-solid fa-graduation-cap"></i> UTN · 2º año en curso</li>
+                    <li><i class="fa-solid fa-language"></i> Español nativo · Inglés B2 · Portugués inicial</li>
+                    <li><i class="fa-solid fa-clock"></i> Disponibilidad full time</li>
+                </ul>
+            </div>
+
+            <h3 class="subtitulo-seccion">Trayectoria</h3>
+            <ul class="linea-tiempo">
+                <li>
+                    <span class="fecha">2024 — hoy</span>
+                    <h4>Operador de Servicio · Rowing S.A. Delta</h4>
+                    <p>Tareas administrativas, operativas y de atención al cliente. Recepción y resolución de reclamos en un entorno de ritmo rápido y coordinación de equipos de trabajo.</p>
+                </li>
+                <li>
+                    <span class="fecha">En curso</span>
+                    <h4>Técnico Superior en Programación · UTN</h4>
+                    <p>Programación orientada a objetos, bases de datos, desarrollo de escritorio y web.</p>
+                </li>
+                <li>
+                    <span class="fecha">Curso</span>
+                    <h4>Despachante de Rampa · ETAP</h4>
+                    <p>Escuela Técnica de Aviación Profesional. Finalizado.</p>
+                </li>
+                <li>
+                    <span class="fecha">2017 — 2022</span>
+                    <h4>Bachiller en Ciencias Económicas · Colegio San Martín de Tours</h4>
+                    <p>Secundario completo.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="seccion contenedor" id="conocimientos">
+            <h2 class="titulo-seccion"><span>02.</span> Conocimientos</h2>
+            <div class="grilla-skills">
+                <div class="skill"><i class="fa-solid fa-hashtag"></i> C#</div>
+                <div class="skill"><i class="fa-brands fa-microsoft"></i> .NET / WinForms</div>
+                <div class="skill"><i class="fa-solid fa-database"></i> SQL Server</div>
+                <div class="skill"><i class="fa-solid fa-c"></i> C++</div>
+                <div class="skill"><i class="fa-brands fa-html5"></i> HTML</div>
+                <div class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                <div class="skill"><i class="fa-brands fa-js"></i> JavaScript</div>
+                <div class="skill"><i class="fa-solid fa-code"></i> TypeScript</div>
+                <div class="skill"><i class="fa-brands fa-vuejs"></i> Vue / Nuxt</div>
+                <div class="skill"><i class="fa-brands fa-react"></i> React / Next.js</div>
+                <div class="skill"><i class="fa-solid fa-server"></i> Supabase</div>
+                <div class="skill"><i class="fa-brands fa-git-alt"></i> Git / GitHub</div>
             </div>
         </section>
 
-        <section class="bloque" id="proyectos">
-            <h2 class="titulo-seccion">Proyectos</h2>
+        <section class="seccion contenedor" id="proyectos">
+            <h2 class="titulo-seccion"><span>03.</span> Proyectos</h2>
             <div class="filtros">
                 <button class="filtro activo" data-filtro="todos">Todos</button>
                 <button class="filtro" data-filtro="web">Web</button>
                 <button class="filtro" data-filtro="escritorio">Escritorio</button>
+                <button class="filtro" data-filtro="consola">Consola</button>
             </div>
+            <div class="grilla-proyectos">
+                <article class="proyecto" data-categoria="web">
+                    <div class="proyecto-imagen"><img src="img/tutor-ia.jpg" alt="Pantalla de inicio de sesión de Tutor IA"></div>
+                    <div class="proyecto-info">
+                        <div class="proyecto-cabecera">
+                            <h3>Tutor IA</h3>
+                            <div class="proyecto-links">
+                                <a href="https://github.com/MateoEGomez/5digo.gpt1.vercel" target="_blank" aria-label="Ver código en GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://5digogpt1vercel.vercel.app" target="_blank" aria-label="Ver sitio online"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <p>Plataforma educativa con un tutor basado en Google Gemini que se adapta al progreso del estudiante. Gestión de cursos y temas, chat con formato Markdown y autenticación.</p>
+                        <ul class="etiquetas">
+                            <li>Next.js</li>
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>Supabase</li>
+                            <li>Gemini AI</li>
+                        </ul>
+                    </div>
+                </article>
 
-            <article class="proyecto" data-categoria="escritorio">
-                <div class="proyecto-imagen">Captura del proyecto</div>
-                <div class="proyecto-info">
-                    <h3>Gestor de Artículos</h3>
-                    <p class="proyecto-meta"><strong>Contexto:</strong> Académico | <strong>Tecnologías:</strong> <span>C#, .NET, SQL Server</span></p>
-                    <p>Aplicación WinForms con arquitectura en capas para administrar un catálogo de artículos conectado a una base de datos.</p>
-                    <p><strong>Mi rol:</strong> Desarrollador</p>
-                    <a href="#" class="btn">Ver en GitHub</a>
-                </div>
-            </article>
+                <article class="proyecto" data-categoria="escritorio">
+                    <div class="proyecto-imagen"><i class="fa-regular fa-window-maximize"></i></div>
+                    <div class="proyecto-info">
+                        <div class="proyecto-cabecera">
+                            <h3>Gestor de Catálogo de Artículos</h3>
+                            <div class="proyecto-links">
+                                <a href="https://github.com/MateoEGomez/tp-winform-equipo-f" target="_blank" aria-label="Ver código en GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p>Aplicación de escritorio desarrollada en equipo para Programación III. Arquitectura en capas (dominio, negocio, UI) con ABM de artículos conectado a SQL Server.</p>
+                        <ul class="etiquetas">
+                            <li>C#</li>
+                            <li>WinForms</li>
+                            <li>SQL Server</li>
+                        </ul>
+                    </div>
+                </article>
 
-            <article class="proyecto" data-categoria="web">
-                <div class="proyecto-imagen">Captura del proyecto</div>
-                <div class="proyecto-info">
-                    <h3>Portfolio personal</h3>
-                    <p class="proyecto-meta"><strong>Contexto:</strong> Personal | <strong>Tecnologías:</strong> <span>HTML, CSS, JavaScript</span></p>
-                    <p>Este mismo sitio: responsive, con modo claro/oscuro, filtro de proyectos y validación del formulario.</p>
-                    <p><strong>Mi rol:</strong> Desarrollador Frontend</p>
-                    <a href="#" class="btn">Ver en GitHub</a>
-                </div>
-            </article>
+                <article class="proyecto" data-categoria="web">
+                    <div class="proyecto-imagen"><img src="img/tostado-cafe.jpg" alt="Sitio de Tostado Café"></div>
+                    <div class="proyecto-info">
+                        <div class="proyecto-cabecera">
+                            <h3>Tostado Café</h3>
+                            <div class="proyecto-links">
+                                <a href="https://github.com/MateoEGomez/tostado-cafe" target="_blank" aria-label="Ver código en GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://tostado-cafe.vercel.app" target="_blank" aria-label="Ver sitio online"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <p>Catálogo de café de especialidad con filtros combinables, búsqueda y paginación. Primera demo de una serie de seis catálogos.</p>
+                        <ul class="etiquetas">
+                            <li>Nuxt 4</li>
+                            <li>Vue</li>
+                            <li>Motion</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="proyecto" data-categoria="web">
+                    <div class="proyecto-imagen"><img src="img/raiz-estudio.jpg" alt="Sitio de Raíz Estudio"></div>
+                    <div class="proyecto-info">
+                        <div class="proyecto-cabecera">
+                            <h3>Raíz Estudio</h3>
+                            <div class="proyecto-links">
+                                <a href="https://github.com/MateoEGomez/raiz-estudio" target="_blank" aria-label="Ver código en GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p>Grilla semanal de clases de yoga y movimiento, filtrable por disciplina, nivel, horario y modalidad.</p>
+                        <ul class="etiquetas">
+                            <li>Nuxt 4</li>
+                            <li>TypeScript</li>
+                            <li>Motion</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="proyecto" data-categoria="web">
+                    <div class="proyecto-imagen"><img src="img/margen-libros.jpg" alt="Sitio de Margen Libros"></div>
+                    <div class="proyecto-info">
+                        <div class="proyecto-cabecera">
+                            <h3>Margen Libros</h3>
+                            <div class="proyecto-links">
+                                <a href="https://github.com/MateoEGomez/margen-libros" target="_blank" aria-label="Ver código en GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p>Catálogo de una librería independiente con filtros por género, idioma, formato y editorial.</p>
+                        <ul class="etiquetas">
+                            <li>Nuxt 4</li>
+                            <li>TypeScript</li>
+                            <li>Motion</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="proyecto" data-categoria="web">
+                    <div class="proyecto-imagen"><img src="img/vivero-sauco.jpg" alt="Sitio de Vivero Saúco"></div>
+                    <div class="proyecto-info">
+                        <div class="proyecto-cabecera">
+                            <h3>Vivero Saúco</h3>
+                            <div class="proyecto-links">
+                                <a href="https://github.com/MateoEGomez/vivero-sauco" target="_blank" aria-label="Ver código en GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p>Catálogo de plantas con ficha de luz y riego, filtrable por ambiente, dificultad y si es apta para mascotas.</p>
+                        <ul class="etiquetas">
+                            <li>Nuxt 4</li>
+                            <li>TypeScript</li>
+                            <li>Motion</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="proyecto" data-categoria="web">
+                    <div class="proyecto-imagen"><img src="img/masa-madre.jpg" alt="Sitio de Masa Madre"></div>
+                    <div class="proyecto-info">
+                        <div class="proyecto-cabecera">
+                            <h3>Masa Madre</h3>
+                            <div class="proyecto-links">
+                                <a href="https://github.com/MateoEGomez/masa-madre" target="_blank" aria-label="Ver código en GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p>Carta de encargues de una panadería, con filtros por categoría, tipo de dieta y día de horneado.</p>
+                        <ul class="etiquetas">
+                            <li>Nuxt 4</li>
+                            <li>TypeScript</li>
+                            <li>Motion</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="proyecto" data-categoria="web">
+                    <div class="proyecto-imagen"><img src="img/pelo-y-pata.jpg" alt="Sitio de Pelo y Pata"></div>
+                    <div class="proyecto-info">
+                        <div class="proyecto-cabecera">
+                            <h3>Pelo &amp; Pata</h3>
+                            <div class="proyecto-links">
+                                <a href="https://github.com/MateoEGomez/pelo-y-pata" target="_blank" aria-label="Ver código en GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p>Catálogo de servicios de peluquería canina, filtrable por servicio, tamaño del perro, sucursal y duración.</p>
+                        <ul class="etiquetas">
+                            <li>Nuxt 4</li>
+                            <li>TypeScript</li>
+                            <li>Motion</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="proyecto" data-categoria="consola">
+                    <div class="proyecto-imagen"><i class="fa-solid fa-terminal"></i></div>
+                    <div class="proyecto-info">
+                        <div class="proyecto-cabecera">
+                            <h3>Sistema de Gestión de Cine</h3>
+                            <div class="proyecto-links">
+                                <a href="https://github.com/MateoEGomez/Tp-viejo" target="_blank" aria-label="Ver código en GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p>TP integrador de consola para administrar películas, funciones, clientes y empleados, con persistencia en archivos.</p>
+                        <ul class="etiquetas">
+                            <li>C++</li>
+                            <li>POO</li>
+                            <li>Archivos</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="proyecto" data-categoria="web">
+                    <div class="proyecto-imagen"><i class="fa-solid fa-code"></i></div>
+                    <div class="proyecto-info">
+                        <div class="proyecto-cabecera">
+                            <h3>Portfolio personal</h3>
+                            <div class="proyecto-links">
+                                <a href="https://github.com/MateoEGomez/portfolio" target="_blank" aria-label="Ver código en GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p>Este mismo sitio: responsive, con modo claro/oscuro, filtro de proyectos y formulario de contacto, sin frameworks.</p>
+                        <ul class="etiquetas">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <section class="bloque centrado" id="redes">
-            <h2 class="titulo-seccion">Redes</h2>
-            <div class="redes">
-                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <section class="seccion contenedor" id="contacto">
+            <h2 class="titulo-seccion"><span>04.</span> Contacto</h2>
+            <div class="contacto">
+                <div>
+                    <h3 class="contacto-titulo">¿Hablamos?</h3>
+                    <p>Estoy buscando mi primera experiencia como desarrollador. Si tenés una propuesta o querés charlar sobre algún proyecto, escribime.</p>
+                    <ul class="redes">
+                        <li><a href="mailto:gomezmateoezequiel@gmail.com"><i class="fa-solid fa-envelope"></i> gomezmateoezequiel@gmail.com</a></li>
+                        <li><a href="https://github.com/MateoEGomez" target="_blank"><i class="fa-brands fa-github"></i> github.com/MateoEGomez</a></li>
+                    </ul>
+                </div>
+                <form class="formulario" id="formContacto" novalidate>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="tu@email.com">
+
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" placeholder="Asunto del mensaje">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="5" placeholder="Escribí tu mensaje acá..."></textarea>
+
+                    <p class="form-mensaje" id="formMensaje"></p>
+                    <button type="submit" class="btn">Enviar mensaje <i class="fa-solid fa-arrow-right"></i></button>
+                </form>
             </div>
-        </section>
-
-        <section class="bloque centrado" id="contacto">
-            <h2 class="titulo-seccion">Contacto</h2>
-            <p>¿Tenés algún proyecto en mente o querés que trabajemos juntos? Dejame un mensaje.</p>
-            <form class="formulario" id="formContacto" novalidate>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="Tu nombre">
-
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="tu@email.com">
-
-                <label for="asunto">Asunto</label>
-                <input type="text" id="asunto" placeholder="Asunto del mensaje">
-
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" rows="5" placeholder="Escribí tu mensaje acá..."></textarea>
-
-                <p class="form-mensaje" id="formMensaje"></p>
-                <button type="submit" class="btn">Enviar mensaje</button>
-            </form>
         </section>
     </main>
 
-    <footer class="contenedor">
-        <div class="bloque centrado footer">
-            <p>© <span id="anio"></span> Mateo Gómez</p>
-        </div>
+    <footer class="footer contenedor">
+        <p>Diseñado y desarrollado por Mateo Gómez · <span id="anio"></span></p>
     </footer>
 
     <script src="js/main.js"></script>
