@@ -99,3 +99,11 @@ form.addEventListener("submit", function (evento) {
 });
 
 document.getElementById("anio").textContent = new Date().getFullYear();
+
+AOS.init({
+    duration: 1100,
+    delay: 100,
+    easing: "ease-out-cubic",
+    once: true,
+    offset: 80
+});

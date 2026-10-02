@@ -50,6 +50,10 @@ ul {
     list-style: none;
 }
 
+main {
+    overflow-x: clip;
+}
+
 h1, h2, h3 {
     font-family: var(--fuente-titulos);
     color: var(--color-titulo);
@@ -371,7 +375,8 @@ h1, h2, h3 {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.proyecto:hover {
+.proyecto:hover,
+.proyecto.aos-animate:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }

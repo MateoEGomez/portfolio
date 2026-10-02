@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -29,28 +30,28 @@
     <main>
         <section class="hero contenedor" id="inicio">
             <div class="hero-texto">
-                <p class="hero-saludo">Hola, mi nombre es</p>
-                <h1>Mateo Gómez<span>.</span></h1>
-                <h2>Construyo software que resuelve problemas reales.</h2>
-                <p>Estudiante de Técnico Superior en Programación en la UTN. Desarrollo aplicaciones de escritorio en C# y sitios web con JavaScript, Vue y React.</p>
-                <div class="hero-botones">
+                <p class="hero-saludo" data-aos="fade-up">Hola, mi nombre es</p>
+                <h1 data-aos="fade-up" data-aos-delay="150">Mateo Gómez<span>.</span></h1>
+                <h2 data-aos="fade-up" data-aos-delay="300">Construyo software que resuelve problemas reales.</h2>
+                <p data-aos="fade-up" data-aos-delay="450">Estudiante de Técnico Superior en Programación en la UTN. Desarrollo aplicaciones de escritorio en C# y sitios web con JavaScript, Vue y React.</p>
+                <div class="hero-botones" data-aos="fade-up" data-aos-delay="600">
                     <a href="#proyectos" class="btn">Ver proyectos</a>
                     <a href="https://github.com/MateoEGomez" target="_blank" class="btn btn-borde"><i class="fa-brands fa-github"></i> GitHub</a>
                 </div>
             </div>
-            <div class="foto-marco">
+            <div class="foto-marco" data-aos="zoom-in" data-aos-delay="450">
                 <img class="foto" src="img/foto.jpg" alt="Foto de Mateo Gómez">
             </div>
         </section>
 
         <section class="seccion contenedor" id="sobre-mi">
-            <h2 class="titulo-seccion"><span>01.</span> Sobre mí</h2>
+            <h2 class="titulo-seccion" data-aos="fade-right"><span>01.</span> Sobre mí</h2>
             <div class="sobre-mi">
-                <div>
+                <div data-aos="fade-up">
                     <p>Aspiro a ser programador y actualmente estoy cursando el segundo año de la Tecnicatura Superior en Programación en la UTN. Soy una persona responsable y motivada, con muchas ganas de aprender, crecer profesionalmente y aplicar lo que sé en proyectos reales.</p>
                     <p>Trabajo en atención al cliente y gestión de equipos, lo que me dio experiencia resolviendo problemas bajo presión y comunicándome con distintas personas. Fuera del código entreno regularmente, algo que me ayuda a mantener el enfoque, la disciplina y la constancia.</p>
                 </div>
-                <ul class="datos">
+                <ul class="datos" data-aos="fade-left" data-aos-delay="250">
                     <li><i class="fa-solid fa-location-dot"></i> San Fernando, Buenos Aires</li>
                     <li><i class="fa-solid fa-graduation-cap"></i> UTN · 2º año en curso</li>
                     <li><i class="fa-solid fa-language"></i> Español nativo · Inglés B2 · Portugués inicial</li>
@@ -58,24 +59,24 @@
                 </ul>
             </div>
 
-            <h3 class="subtitulo-seccion">Trayectoria</h3>
+            <h3 class="subtitulo-seccion" data-aos="fade-right">Trayectoria</h3>
             <ul class="linea-tiempo">
-                <li>
+                <li data-aos="fade-up" data-aos-delay="0">
                     <span class="fecha">2024 — hoy</span>
                     <h4>Operador de Servicio · Rowing S.A. Delta</h4>
                     <p>Tareas administrativas, operativas y de atención al cliente. Recepción y resolución de reclamos en un entorno de ritmo rápido y coordinación de equipos de trabajo.</p>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="150">
                     <span class="fecha">En curso</span>
                     <h4>Técnico Superior en Programación · UTN</h4>
                     <p>Programación orientada a objetos, bases de datos, desarrollo de escritorio y web.</p>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="300">
                     <span class="fecha">Curso</span>
                     <h4>Despachante de Rampa · ETAP</h4>
                     <p>Escuela Técnica de Aviación Profesional. Finalizado.</p>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="450">
                     <span class="fecha">2017 — 2022</span>
                     <h4>Bachiller en Ciencias Económicas · Colegio San Martín de Tours</h4>
                     <p>Secundario completo.</p>
@@ -84,25 +85,25 @@
         </section>
 
         <section class="seccion contenedor" id="conocimientos">
-            <h2 class="titulo-seccion"><span>02.</span> Conocimientos</h2>
+            <h2 class="titulo-seccion" data-aos="fade-right"><span>02.</span> Conocimientos</h2>
             <div class="grilla-skills">
-                <div class="skill"><i class="fa-solid fa-hashtag"></i> C#</div>
-                <div class="skill"><i class="fa-brands fa-microsoft"></i> .NET / WinForms</div>
-                <div class="skill"><i class="fa-solid fa-database"></i> SQL Server</div>
-                <div class="skill"><i class="fa-solid fa-c"></i> C++</div>
-                <div class="skill"><i class="fa-brands fa-html5"></i> HTML</div>
-                <div class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
-                <div class="skill"><i class="fa-brands fa-js"></i> JavaScript</div>
-                <div class="skill"><i class="fa-solid fa-code"></i> TypeScript</div>
-                <div class="skill"><i class="fa-brands fa-vuejs"></i> Vue / Nuxt</div>
-                <div class="skill"><i class="fa-brands fa-react"></i> React / Next.js</div>
-                <div class="skill"><i class="fa-solid fa-server"></i> Supabase</div>
-                <div class="skill"><i class="fa-brands fa-git-alt"></i> Git / GitHub</div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="0"><i class="fa-solid fa-hashtag"></i> C#</div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="100"><i class="fa-brands fa-microsoft"></i> .NET / WinForms</div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="200"><i class="fa-solid fa-database"></i> SQL Server</div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="300"><i class="fa-solid fa-c"></i> C++</div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="0"><i class="fa-brands fa-html5"></i> HTML</div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="100"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="200"><i class="fa-brands fa-js"></i> JavaScript</div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="300"><i class="fa-solid fa-code"></i> TypeScript</div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="0"><i class="fa-brands fa-vuejs"></i> Vue / Nuxt</div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="100"><i class="fa-brands fa-react"></i> React / Next.js</div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="200"><i class="fa-solid fa-server"></i> Supabase</div>
+                <div class="skill" data-aos="zoom-in" data-aos-delay="300"><i class="fa-brands fa-git-alt"></i> Git / GitHub</div>
             </div>
         </section>
 
         <section class="seccion contenedor" id="proyectos">
-            <h2 class="titulo-seccion"><span>03.</span> Proyectos</h2>
+            <h2 class="titulo-seccion" data-aos="fade-right"><span>03.</span> Proyectos</h2>
             <div class="filtros">
                 <button class="filtro activo" data-filtro="todos">Todos</button>
                 <button class="filtro" data-filtro="web">Web</button>
@@ -110,7 +111,7 @@
                 <button class="filtro" data-filtro="consola">Consola</button>
             </div>
             <div class="grilla-proyectos">
-                <article class="proyecto" data-categoria="web">
+                <article class="proyecto" data-categoria="web" data-aos="fade-up" data-aos-delay="0">
                     <div class="proyecto-imagen"><img src="img/tutor-ia.jpg" alt="Pantalla de inicio de sesión de Tutor IA"></div>
                     <div class="proyecto-info">
                         <div class="proyecto-cabecera">
@@ -131,7 +132,7 @@
                     </div>
                 </article>
 
-                <article class="proyecto" data-categoria="escritorio">
+                <article class="proyecto" data-categoria="escritorio" data-aos="fade-up" data-aos-delay="150">
                     <div class="proyecto-imagen"><i class="fa-regular fa-window-maximize"></i></div>
                     <div class="proyecto-info">
                         <div class="proyecto-cabecera">
@@ -149,7 +150,7 @@
                     </div>
                 </article>
 
-                <article class="proyecto" data-categoria="web">
+                <article class="proyecto" data-categoria="web" data-aos="fade-up" data-aos-delay="300">
                     <div class="proyecto-imagen"><img src="img/tostado-cafe.jpg" alt="Sitio de Tostado Café"></div>
                     <div class="proyecto-info">
                         <div class="proyecto-cabecera">
@@ -169,107 +170,7 @@
                     </div>
                 </article>
 
-                <article class="proyecto" data-categoria="web">
-                    <div class="proyecto-imagen"><img src="img/raiz-estudio.jpg" alt="Sitio de Raíz Estudio"></div>
-                    <div class="proyecto-info">
-                        <div class="proyecto-cabecera">
-                            <h3>Raíz Estudio</h3>
-                            <div class="proyecto-links">
-                                <a href="https://github.com/MateoEGomez/raiz-estudio" target="_blank" aria-label="Ver código en GitHub"><i class="fa-brands fa-github"></i></a>
-                                <a href="https://raiz-estudio-web.vercel.app" target="_blank" aria-label="Ver sitio online"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                        <p>Sitio de reservas para un estudio de yoga. Grilla de clases filtrable por disciplina, nivel, horario y modalidad, y reserva por WhatsApp con las clases elegidas.</p>
-                        <ul class="etiquetas">
-                            <li>Nuxt 4</li>
-                            <li>TypeScript</li>
-                            <li>API Nitro</li>
-                            <li>Motion</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="proyecto" data-categoria="web">
-                    <div class="proyecto-imagen"><img src="img/margen-libros.jpg" alt="Sitio de Margen Libros"></div>
-                    <div class="proyecto-info">
-                        <div class="proyecto-cabecera">
-                            <h3>Margen Libros</h3>
-                            <div class="proyecto-links">
-                                <a href="https://github.com/MateoEGomez/margen-libros" target="_blank" aria-label="Ver código en GitHub"><i class="fa-brands fa-github"></i></a>
-                                <a href="https://margen-libros.vercel.app" target="_blank" aria-label="Ver sitio online"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                        <p>Tienda online de una librería independiente con diseño editorial. Catálogo filtrable por género, idioma, formato y editorial, y carrito con pedido por WhatsApp.</p>
-                        <ul class="etiquetas">
-                            <li>Nuxt 4</li>
-                            <li>TypeScript</li>
-                            <li>API Nitro</li>
-                            <li>Motion</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="proyecto" data-categoria="web">
-                    <div class="proyecto-imagen"><img src="img/vivero-sauco.jpg" alt="Sitio de Vivero Saúco"></div>
-                    <div class="proyecto-info">
-                        <div class="proyecto-cabecera">
-                            <h3>Vivero Saúco</h3>
-                            <div class="proyecto-links">
-                                <a href="https://github.com/MateoEGomez/vivero-sauco" target="_blank" aria-label="Ver código en GitHub"><i class="fa-brands fa-github"></i></a>
-                                <a href="https://vivero-sauco.vercel.app" target="_blank" aria-label="Ver sitio online"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                        <p>Tienda online de un vivero urbano. Cada planta tiene su ficha de luz y riego, con filtros por ambiente, dificultad y aptitud para mascotas, y carrito por WhatsApp.</p>
-                        <ul class="etiquetas">
-                            <li>Nuxt 4</li>
-                            <li>TypeScript</li>
-                            <li>API Nitro</li>
-                            <li>Motion</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="proyecto" data-categoria="web">
-                    <div class="proyecto-imagen"><img src="img/masa-madre.jpg" alt="Sitio de Masa Madre"></div>
-                    <div class="proyecto-info">
-                        <div class="proyecto-cabecera">
-                            <h3>Masa Madre</h3>
-                            <div class="proyecto-links">
-                                <a href="https://github.com/MateoEGomez/masa-madre" target="_blank" aria-label="Ver código en GitHub"><i class="fa-brands fa-github"></i></a>
-                                <a href="https://masa-madre-web.vercel.app" target="_blank" aria-label="Ver sitio online"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                        <p>Carta online de una panadería de masa madre. Filtros por categoría, dieta y día de horneado, y encargues por WhatsApp con retiro o envío.</p>
-                        <ul class="etiquetas">
-                            <li>Nuxt 4</li>
-                            <li>TypeScript</li>
-                            <li>API Nitro</li>
-                            <li>Motion</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="proyecto" data-categoria="web">
-                    <div class="proyecto-imagen"><img src="img/pelo-y-pata.jpg" alt="Sitio de Pelo y Pata"></div>
-                    <div class="proyecto-info">
-                        <div class="proyecto-cabecera">
-                            <h3>Pelo &amp; Pata</h3>
-                            <div class="proyecto-links">
-                                <a href="https://github.com/MateoEGomez/pelo-y-pata" target="_blank" aria-label="Ver código en GitHub"><i class="fa-brands fa-github"></i></a>
-                                <a href="https://pelo-y-pata.vercel.app" target="_blank" aria-label="Ver sitio online"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                        <p>Sitio de turnos para una peluquería canina con 3 sucursales. Servicios filtrables por tamaño del perro, sucursal y duración, y reserva del turno por WhatsApp.</p>
-                        <ul class="etiquetas">
-                            <li>Nuxt 4</li>
-                            <li>TypeScript</li>
-                            <li>API Nitro</li>
-                            <li>Motion</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="proyecto" data-categoria="consola">
+                <article class="proyecto" data-categoria="consola" data-aos="fade-up" data-aos-delay="0">
                     <div class="proyecto-imagen"><i class="fa-solid fa-terminal"></i></div>
                     <div class="proyecto-info">
                         <div class="proyecto-cabecera">
@@ -287,7 +188,7 @@
                     </div>
                 </article>
 
-                <article class="proyecto" data-categoria="web">
+                <article class="proyecto" data-categoria="web" data-aos="fade-up" data-aos-delay="150">
                     <div class="proyecto-imagen"><i class="fa-solid fa-code"></i></div>
                     <div class="proyecto-info">
                         <div class="proyecto-cabecera">
@@ -308,9 +209,9 @@
         </section>
 
         <section class="seccion contenedor" id="contacto">
-            <h2 class="titulo-seccion"><span>04.</span> Contacto</h2>
+            <h2 class="titulo-seccion" data-aos="fade-right"><span>04.</span> Contacto</h2>
             <div class="contacto">
-                <div>
+                <div data-aos="fade-right">
                     <h3 class="contacto-titulo">¿Hablamos?</h3>
                     <p>Estoy buscando mi primera experiencia como desarrollador. Si tenés una propuesta o querés charlar sobre algún proyecto, escribime.</p>
                     <ul class="redes">
@@ -318,7 +219,7 @@
                         <li><a href="https://github.com/MateoEGomez" target="_blank"><i class="fa-brands fa-github"></i> github.com/MateoEGomez</a></li>
                     </ul>
                 </div>
-                <form class="formulario" id="formContacto" novalidate>
+                <form class="formulario" data-aos="fade-left" data-aos-delay="250" id="formContacto" novalidate>
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" placeholder="Tu nombre">
 
@@ -342,6 +243,7 @@
         <p>Diseñado y desarrollado por Mateo Gómez · <span id="anio"></span></p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
