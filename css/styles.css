@@ -61,9 +61,10 @@ h1, h2, h3 {
 }
 
 .contenedor {
-    max-width: 1000px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding-left: 48px;
+    padding-right: 48px;
 }
 
 .header {
@@ -549,6 +550,26 @@ h1, h2, h3 {
     color: var(--color-suave);
 }
 
+@media (min-width: 1500px) {
+    html {
+        font-size: 17px;
+    }
+
+    .contenedor {
+        max-width: 1480px;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .grilla-skills {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .grilla-proyectos {
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    }
+}
+
 @media (max-width: 850px) {
     .grilla-skills {
         grid-template-columns: repeat(2, 1fr);
@@ -564,6 +585,11 @@ h1, h2, h3 {
 }
 
 @media (max-width: 700px) {
+    .contenedor {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .menu-btn {
         display: block;
     }
